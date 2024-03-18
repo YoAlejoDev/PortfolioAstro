@@ -1,0 +1,35 @@
+---
+import ExperienceItems from './ExperienceItems.astro';
+
+const exp = [
+    {
+        date: '2023-2024',
+        title: 'Fullstack Web Developer',
+        company: 'Triario SAS',
+        description: 'Help to develop web applications.',
+    },
+    {
+        date: '2010-2017',
+        title: 'Graphic Designer',
+        company: 'Vallas&Vallas',
+        description: 'Desing exterior and interior publicity.',
+    },
+    {
+        date: '2021-today',
+        title: 'Student software engineer',
+        company: 'Instituto Universitario Pascual Bravo',
+        description: 'Getting knowledge about software development.',
+    },
+]
+---
+<ol class="items-center sm:flex">
+    {
+        exp.map((exp) => (
+            <li class="relative mb-6 sm:mb-0">
+                <ExperienceItems {...exp} />
+            </li>
+        ))
+    }
+    
+</ol>
+

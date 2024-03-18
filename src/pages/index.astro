@@ -1,12 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout 
+title="Portfolio Dev - Alejandro"
+description="Portfolio de Alejandro, Fullstack Web Developer"
 
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+>
+	<main>
+		<SectionContainer class="py-44" id="top">
 			<h1 class="text-white text-5xl font-bold flex justify-between flex-row gap-x-2 pb-10">
 				Hey It's me Alejandro
 				<a 
@@ -42,7 +47,11 @@ import Badge from '../components/Badge.astro';
 
 				</li>
 			</ul>
-		</section>
+		</SectionContainer>
+		<SectionContainer class="py-44 pb-22" id="experience">
+			<h2 class="text-2xl text-white font-semibold mb-10">Experience</h2>
+			<Experience />
+		</SectionContainer>
 		
 	</main>
 </Layout>
