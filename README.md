@@ -36,4 +36,4 @@
 ### Do you want to use this template?
 
  - _NPM install_ .
- - Be sure that you have _Astro_ on VScode or any code editor that you use.
+ - Be sure that you have *Astro* on VScode or any code editor that you use.
