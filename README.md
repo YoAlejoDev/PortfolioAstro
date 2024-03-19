@@ -37,3 +37,9 @@
 
  - <b>NPM INIT</b>
  - Be sure that you have *Astro* on VScode or any code editor that you use.
+
+<footer>
+<p style="float:left; width: 20%;">
+This page was made based in the tutorial of MiduDev <a target="_blank" href="https://www.youtube.com/watch?v=HEMvsJTBweY&list=WL&index=12&t=2692s&ab_channel=midulive">AQUI</a>
+</p>
+</footer>
