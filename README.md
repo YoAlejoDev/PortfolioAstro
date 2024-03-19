@@ -2,7 +2,7 @@
 
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="https://alsiam.com">Alejandro Hurtado (YoAlejoDev)</a></b>
+                <b><a target="_blank" href="https://www.linkedin.com/in/yoalejodev/">Alejandro Hurtado (YoAlejoDev)</a></b>
         </samp>
 </h3>
 
@@ -35,5 +35,5 @@
 
 ### Do you want to use this template?
 
- - <b><a target="_blank" href="https://alsiam.com">NPM INIT</a></b>
+ - <b>NPM INIT</b>
  - Be sure that you have *Astro* on VScode or any code editor that you use.
