@@ -32,3 +32,8 @@
 
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-092749?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=000000)
+
+### Do you want to use this template?
+
+ - _NPM install_ .
+ - Be sure that you have _Astro_ on VScode or any code editor that you use.
