@@ -1,0 +1,53 @@
+---
+const projects = [
+    {
+        name: 'Landing page',
+        description: 'Project develop in HTML, CSS and JavaScript. This project was made for my bootcamp in 2023.',
+        image: '/images/projects/pf--hurtado.png',
+        link: 'https://github.com/YoAlejoDev/PF---Hurtado-Alvarez',
+        tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    {
+        name: 'Portfolio 1',
+        description: 'Project develop in HTML, CSS and JavaScript. This project was made for my bootcamp in 2023.',
+        image: '/images/projects/portfolio1.png',
+        link: 'https://github.com/YoAlejoDev/primerBlog',
+        tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    {
+        name: 'NauticaWorld',
+        description: 'Project for a client where he want to start his website.',
+        image: '/images/projects/nauticaworld.png',
+        link: 'https://github.com/YoAlejoDev/nauticaWorld',
+        tags: ['HTML', 'CSS', 'JavaScript']
+    },
+]
+---
+
+<div class="grid grid-cols-3 gap-4">
+{
+    projects.map(project => {
+        return (
+        <div class="max-w-sm rounded overflow-hidden shadow-lg border">
+            <img src={project.image} alt={project.name}>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-blue-400">{project.name}</div>
+                    <p class="text-white-700 text-base">
+                        {project.description}
+                    </p>
+                <a href={project.link} target="_blank">Ver Mas</a>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                {
+                    project.tags.map(tag => {
+                        return (
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tag}</span>
+                        )
+                    })
+                }
+            </div>
+        </div>
+        )
+    })
+}
+</div>
