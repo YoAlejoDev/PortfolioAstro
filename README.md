@@ -2,7 +2,7 @@
 
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="https://alsiam.com">Alejandrro (YoAlejoDev)</a></b>
+                <b><a target="_blank" href="https://www.linkedin.com/in/yoalejodev/">Alejandro Hurtado (YoAlejoDev)</a></b>
         </samp>
 </h3>
 
@@ -32,3 +32,14 @@
 
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-092749?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=000000)
+
+### Do you want to use this template?
+
+ - <b>NPM INIT</b>
+ - Be sure that you have *Astro* on VScode or any code editor that you use.
+
+<footer>
+<p style="float:left; width: 20%;">
+This page was made based in the tutorial of MiduDev <a target="_blank" href="https://www.youtube.com/watch?v=HEMvsJTBweY&list=WL&index=12&t=2692s&ab_channel=midulive">AQUI</a>
+</p>
+</footer>
