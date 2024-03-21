@@ -1,0 +1,80 @@
+---
+const Technologies = [
+    {
+        name: "Python",
+        link: "https://www.python.org/"
+    },
+    {
+        name: "JavaScript",
+        link: "https://www.javascript.com/"
+    },
+    {
+        name: "React",
+        link: "https://reactjs.org/"
+    },
+    {
+        name: "Node.js",
+        link: "https://nodejs.org/"
+    },
+    {
+        name: "Express",
+        link: "https://expressjs.com/"
+    },
+    {
+        name: "MySQL",
+        link: "https://www.mysql.com/"
+    },
+    {
+        name: "Django",
+        link: "https://www.djangoproject.com/"
+    },
+    {
+        name: "Astro",
+        link: "https://astro.build/"
+    }
+]
+---
+
+<div>
+    <h1>Technologies that I use:</h1>
+    <ul class="grid grid-cols-3 gap-6">
+        {
+            Technologies.map(tech => {
+                return (
+                    <li>
+                        <a class="outline outline-offset-2 outline-blue-500 rounded-full px-4 text-blue-400" href={tech.link}>{tech.name}</a>
+                    </li>
+                )
+            
+            })
+        }
+    </ul>
+</div>
+
+<style>
+    :root{
+        --primary-color: rgba(96, 165, 250, 0.8);
+        --secondary-color: #1f1f1f;
+        --background-color: #121212;
+    }
+    *{
+        font-family: 'Onest', system-ui, sans-serif;
+    }
+    h2{
+        color: var(--primary-color);
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-size: 18px;
+        font-weight: bold;
+        maring: 10px 0px;
+        margin-bottom: 10px;
+    }
+
+    a{
+
+    }
+</style>
