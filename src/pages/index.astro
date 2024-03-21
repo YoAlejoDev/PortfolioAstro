@@ -2,33 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Top from '../components/Top.astro';
 import Experience from '../components/Experience.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import TitleSection from '../components/TitleSection.astro';
 import Proyects from '../components/Proyects.astro';
-// import About from '../components/About.astro';
+import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
 title="Portfolio Dev - Alejandro"
-description="Portfolio de Alejandro, Fullstack Web Developer"
-
+description="Alejandro's Portfolio, Fullstack Web Developer"
 >
 	<main>
-		<SectionContainer class="py-44" id="top">
-			<Top />
-		</SectionContainer>
-		<SectionContainer class="py-44" id="experience">
-			<TitleSection>Experience</TitleSection>
-			<Experience />
-		</SectionContainer>
-		<SectionContainer class="py-44" id="projects">
-			<TitleSection>Projects</TitleSection>
-			<Proyects />
-		</SectionContainer>
-		<!-- <SectionContainer class="py-44" id="about">
-			<TitleSection>About Me</TitleSection>
-		</SectionContainer> -->
+		<Top />
+		<Experience />			
+		<Proyects />
+		<!-- <About /> -->
 		<Footer />
 	</main>
 </Layout>

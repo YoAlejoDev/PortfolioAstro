@@ -1,5 +1,7 @@
 ---
 import ExperienceItems from './ExperienceItems.astro';
+import TitleSection from '../components/TitleSection.astro';
+import SectionContainer from './SectionContainer.astro';
 
 const exp = [
     {
@@ -22,14 +24,17 @@ const exp = [
     },
 ]
 ---
-<ol class="items-center sm:flex">
-    {
-        exp.map((exp) => (
-            <li class="relative mb-6 sm:mb-0">
-                <ExperienceItems {...exp} />
-            </li>
-        ))
-    }
-    
-</ol>
+<SectionContainer class="py-44" id="experience">
+    <TitleSection>Experience</TitleSection>
+    <ol class="items-center sm:flex">
+        {
+            exp.map((exp) => (
+                <li class="relative mb-6 sm:mb-0">
+                    <ExperienceItems {...exp} />
+                </li>
+            ))
+        }
+        
+    </ol>
+</SectionContainer>
 
