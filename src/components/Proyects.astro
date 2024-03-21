@@ -1,4 +1,7 @@
 ---
+import TitleSection from "./TitleSection.astro";
+import SectionContainer from "./SectionContainer.astro";
+
 const projects = [
     {
         name: 'Landing page',
@@ -24,6 +27,8 @@ const projects = [
 ]
 ---
 
+<SectionContainer class="py-44" id="projects">
+<TitleSection>Projects</TitleSection>
 <div class="grid grid-cols-3 gap-4">
 {
     projects.map(project => {
@@ -35,7 +40,7 @@ const projects = [
                     <p class="text-white-700 text-base">
                         {project.description}
                     </p>
-                <a href={project.link} target="_blank">Ver Mas</a>
+                <a href={project.link} target="_blank"><span class="text-blue-400">Ver Mas</span></a>
             </div>
             <div class="px-6 pt-4 pb-2">
                 {
@@ -51,3 +56,4 @@ const projects = [
     })
 }
 </div>
+</SectionContainer> 
