@@ -74,7 +74,15 @@ const Technologies = [
         margin-bottom: 10px;
     }
 
-    a{
+    @media (min-width: 425px) {
+        ul {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
 
+    @media (min-width: 375px) {
+        ul {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }
 </style>

@@ -3,13 +3,13 @@ import Badge from './general/Badge.astro';
 import SectionContainer from './general/SectionContainer.astro';
 ---
 <SectionContainer class="py-44" id="top">
-    <h1 class="text-white text-5xl font-bold flex justify-between flex-row gap-x-2 pb-10 md:text-[40px]">
+    <h1 class="text-white text-5xl font-bold flex justify-between flex-row gap-x-2 pb-10 md:text-[40px] h1-container">
         Hey It's me Alejandro
         <a 
         href="https://github.com/YoAlejoDev" 
         target="_blank" 
         rel="noopener" 
-        class="flex justify-center items-center">
+        class="flex justify-center items-center aviable-hire">
             <Badge>Aviable for hire</Badge>
         </a>
     </h1>
@@ -39,3 +39,25 @@ import SectionContainer from './general/SectionContainer.astro';
         </li>
     </ul> 
 </SectionContainer>
+
+<style>
+    @media (min-width: 425px) {
+        .h1-container {
+            flex-direction: column;
+        } 
+
+        .aviable-hire {
+            margin-top: 1rem;
+        }
+    }
+
+    @media (min-width: 375px) {
+        .h1-container {
+            flex-direction: column;
+        } 
+
+        .aviable-hire {
+            margin-top: 1rem;
+        }
+    }
+</style>
