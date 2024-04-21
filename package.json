@@ -18,5 +18,10 @@
     "astro": "^4.5.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
-  }
+  },
+  "description": "<h3 align=\"center\">         <samp>&gt; Hey There!, I am                 <b><a target=\"_blank\" href=\"https://www.linkedin.com/in/yoalejodev/\">Alejandro Hurtado (YoAlejoDev)</a></b>         </samp> </h3>",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }

@@ -33,11 +33,18 @@ const Technologies = [
         link: "https://astro.build/"
     }
 ]
+
+const learnTechnologies = [
+    {
+        name: "php",
+        link: "https://www.php.net/"
+    }
+]
 ---
 
 <div>
-    <h1>Technologies that I use:</h1>
-    <ul class="grid grid-cols-3 gap-6">
+    <h1 class="my-10">Technologies that I use:</h1>
+    <ul class="grid grid-cols-3 gap-6 mt-5">
         {
             Technologies.map(tech => {
                 return (
@@ -46,6 +53,18 @@ const Technologies = [
                     </li>
                 )
             
+            })
+        }
+    </ul>
+    <h1 class="my-10">Technologies that I'm learning:</h1>
+    <ul class="grid grid-cols-3 gap-6 mt-5">
+        {
+            learnTechnologies.map(tech => {
+                return (
+                    <li>
+                        <a class="outline outline-offset-2 outlired-500 rounded-full px-4 text-red-400" href={tech.link}>{tech.name}</a>
+                    </li>
+                )
             })
         }
     </ul>
@@ -59,6 +78,11 @@ const Technologies = [
     }
     *{
         font-family: 'Onest', system-ui, sans-serif;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
     }
     h2{
         color: var(--primary-color);
@@ -83,6 +107,12 @@ const Technologies = [
     @media (min-width: 375px) {
         ul {
             grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 1024px) {
+        ul {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
     }
 </style>
