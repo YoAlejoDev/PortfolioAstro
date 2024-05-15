@@ -31,13 +31,17 @@ const Technologies = [
     {
         name: "Astro",
         link: "https://astro.build/"
+    },
+    {
+        name: "C#",
+        link: "https://docs.microsoft.com/en-us/dotnet/csharp/"
     }
 ]
 
 const learnTechnologies = [
     {
-        name: "php",
-        link: "https://www.php.net/"
+        name: "C++",
+        link: "https://www.cplusplus.com/"
     }
 ]
 ---
@@ -49,25 +53,32 @@ const learnTechnologies = [
             Technologies.map(tech => {
                 return (
                     <li>
-                        <a class="outline outline-offset-2 outline-blue-500 rounded-full px-4 text-blue-400" href={tech.link}>{tech.name}</a>
+                        <a class="outline outline-offset-2 outline-blue-500 rounded-full px-4 text-blue-400" href={tech.link} target="_blank">{tech.name}</a>
                     </li>
                 )
             
             })
         }
     </ul>
-    <h1 class="my-10">Technologies that I'm learning:</h1>
-    <ul class="grid grid-cols-3 gap-6 mt-5">
-        {
-            learnTechnologies.map(tech => {
-                return (
-                    <li>
-                        <a class="outline outline-offset-2 outlired-500 rounded-full px-4 text-red-400" href={tech.link}>{tech.name}</a>
-                    </li>
-                )
-            })
-        }
-    </ul>
+    {
+        learnTechnologies.length == 0 ? (<div>{null}</div>) : 
+        (
+            <>
+                <h1 class="my-10">Technologies that I'm learning:</h1>
+                <ul class="grid grid-cols-3 gap-6 mt-5">
+                    {
+                        learnTechnologies.map(tech => {
+                            return (
+                                <li>
+                                    <a class="outline outline-offset-2 outlired-500 rounded-full px-4 text-red-400" href={tech.link} target="_blank">{tech.name}</a>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </>
+        )
+    }
 </div>
 
 <style>
